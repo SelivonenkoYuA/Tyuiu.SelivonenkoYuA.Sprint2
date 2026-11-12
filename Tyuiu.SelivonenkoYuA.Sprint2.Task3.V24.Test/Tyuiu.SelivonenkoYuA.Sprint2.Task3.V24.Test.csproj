@@ -1,0 +1,22 @@
+<Project Sdk="MSTest.Sdk/3.6.4">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseVSTest>true</UseVSTest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.SelivonenkoYuA.Sprint2.Task3.V24.Lib\Tyuiu.SelivonenkoYuA.Sprint2.Task3.V24.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.SelivonenkoYuA.Sprint2.Task3.V25.Lib\Tyuiu.SelivonenkoYuA.Sprint2.Task3.V24.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="tyuiu.cources.programming.interfaces">
+      <HintPath>..\..\..\..\Downloads\tyuiu.cources.programming.interfaces.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
