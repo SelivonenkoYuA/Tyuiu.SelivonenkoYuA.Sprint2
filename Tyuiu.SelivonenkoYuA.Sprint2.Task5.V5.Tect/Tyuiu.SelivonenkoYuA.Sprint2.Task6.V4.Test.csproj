@@ -1,4 +1,4 @@
-<Project Sdk="MSTest.Sdk/3.6.4">
+﻿<Project Sdk="MSTest.Sdk/3.6.4">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.SelivonenkoYuA.Sprint2.Task6.V4\Tyuiu.SelivonenkoYuA.Sprint2.Task6.V4.csproj" />
+    <ProjectReference Include="..\Tyuiu.SelivonenkoYuA.Sprint2.Task5.V5.Lib\Tyuiu.SelivonenkoYuA.Sprint2.Task5.V5.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

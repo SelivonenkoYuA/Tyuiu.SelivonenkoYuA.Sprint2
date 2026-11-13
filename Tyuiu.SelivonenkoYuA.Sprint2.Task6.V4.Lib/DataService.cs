@@ -1,23 +1,22 @@
-﻿using System;
-using tyuiu.cources.programming.interfaces.Sprint2;
-
-namespace Tyuiu.SelivonenkoYuA.Sprint2.Task6.V4.Lib
-{
-    public class DataService : ISprint2Task6V4
-    {
-        public string FindCardSuit(int m)
-        {
+﻿namespace Tyuiu.SelivonenkoYuA.Sprint2.Task6.V4.Lib   // пространство имён библиотеки для задания 6, вариант 4
+{                                                     // начало тела namespace
+    public class DataService : ISprint2Task6V4        // объявление класса DataService; ": ISprint2Task6V4" = реализует интерфейс
+    {                                                 // начало тела класса
+        public string FindCardSuit(int m)             // публичный метод: принимает номер масти (int m), возвращает её название (string)
+        {                                             // начало тела метода
             // Сокращённая форма switch (как на лекции)
-            string res = m switch
-            {
-                1 => "пики",
-                2 => "трефы",
-                3 => "бубны",
-                4 => "червы",
+            string res = m switch                    // switch-выражение (C# 8+): по значению m выбирается одна из веток, результат присваивается в res
+            {                                         // начало блока switch-выражения
+                1 => "пики",                          // если m == 1 → результат "пики"
+                2 => "трефы",                         // если m == 2 → результат "трефы"
+                3 => "бубны",                         // если m == 3 → результат "бубны"
+                4 => "червы",                         // если m == 4 → результат "червы"
                 _ => throw new ArgumentException($"Номер масти должен быть от 1 до 4. Значение {m}")
-            };
+                // "_" — ветка по умолчанию (аналог default/else): для любого другого m выбрасываем исключение
+                // $"..." — интерполяция строки: подставляет значение m в сообщение
+            };                                        // конец switch-выражения; точка с запятой обязательна, т.к. это выражение, а не оператор
 
-            return res;
-        }
-    }
-}
+            return res;                               // возвращаем найденное название масти (либо сюда управление не дойдёт — если было исключение)
+        }                                             // конец метода FindCardSuit
+    }                                                 // конец класса DataService
+}                                                     // конец namespace

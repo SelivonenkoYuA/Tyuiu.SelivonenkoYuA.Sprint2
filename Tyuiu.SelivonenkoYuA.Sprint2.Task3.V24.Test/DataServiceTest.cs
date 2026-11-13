@@ -7,12 +7,12 @@ namespace Tyuiu.SelivonenkoYuA.Sprint2.Task3.V24.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCondition1()
+        public void ValidCondition1() // тестовый метод; имя "ValidCondition1" = проверка 1-й ветки условия
         {
             DataService ds = new DataService();
             // x = 2, попадает в 1-е условие (x > 0)
             double x = 2;
-            double res = ds.Calculate(x);
+            double res = ds.Calculate(x); // ВЫЗОВ тестируемого метода: считаем значение функции от x=2
 
             // Внимание! Значение 10.5 приблизительное. 
             // После запуска программы посмотри точное значение и впиши сюда.
